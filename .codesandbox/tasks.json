@@ -1,0 +1,43 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    // {
+    //   "name": "Install libappindicator-dev",
+    //   "command": "apt update -y && apt install -y libappindicator-dev"
+    // },
+    // {
+    //   "name": "First Install Routing: Step 1",
+    //   "command": "curl -fsSl https://downloads.ortussolutions.com/debs/gpg | gpg --dearmor | tee /usr/share/keyrings/ortussolutions.gpg > /dev/null"
+    // },
+    // {
+    //   "name": "First Install Routing: Step 2",
+    //   "command": "echo \"deb [signed-by=/usr/share/keyrings/ortussolutions.gpg] https://downloads.ortussolutions.com/debs/noarch /\" | tee /etc/apt/sources.list.d/commandbox.list"
+    // },
+    // {
+    //   "name": "First Install Routing: Step 3",
+    //   "command": "apt install -y apt-transport-https"
+    // },
+    // {
+    //   "name": "First Install Routing: Step 4",
+    //   "command": "apt update && apt install -y commandbox"
+    // },
+    // {
+    //   "name": "First Install Routing: Step 5",
+    //   "command": "apt install -y openjdk-11-jdk"
+    // }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "whereis htop": {
+      "name": "whereis htop",
+      "command": "whereis htop",
+      "runAtStart": false
+    },
+    "coldbox": {
+      "name": "*Coldbox",
+      "command": "cd app && box start port=8003 host=0.0.0.0",
+      "runAtStart": true
+    }
+  }
+}
